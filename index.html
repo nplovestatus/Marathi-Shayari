@@ -1,0 +1,1501 @@
+
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Marathi Love Status ❤️ | मराठी प्रेम शायरी</title>
+
+<meta name="description" content="Marathi Love Status ❤️ - प्रेम, रोमँटिक, Sad, Breakup, आठवणी, मैत्री, Attitude, प्रेरणा, आई-वडील आणि शुभ सकाळ/रात्र मराठी शायरीचा सुंदर संग्रह.">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Noto Sans Devanagari","Mangal",Arial,sans-serif;
+    background:#fff5f8;
+    color:#333;
+    transition:0.3s;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,0.96);
+    backdrop-filter:blur(10px);
+    box-shadow:0 2px 15px rgba(0,0,0,0.08);
+}
+
+.nav-container{
+    max-width:1200px;
+    margin:auto;
+    padding:14px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:15px;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#e91e63;
+    text-decoration:none;
+}
+
+.logo span{
+    color:#ff4081;
+}
+
+.nav-links{
+    display:flex;
+    gap:24px;
+    list-style:none;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#333;
+    font-weight:bold;
+}
+
+.nav-links a:hover{
+    color:#e91e63;
+}
+
+.dark-btn{
+    border:none;
+    background:#e91e63;
+    color:white;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:18px;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:500px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:50px 20px;
+    position:relative;
+    color:white;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.42),
+        rgba(0,0,0,0.68)
+    ),
+    url("https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1600&q=90")
+    center/cover no-repeat;
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.hero h1{
+    font-size:54px;
+    margin-bottom:18px;
+    text-shadow:0 4px 15px rgba(0,0,0,.7);
+}
+
+.hero p{
+    font-size:21px;
+    line-height:1.8;
+    margin-bottom:28px;
+}
+
+.hero-btn{
+    display:inline-block;
+    padding:14px 30px;
+    background:#e91e63;
+    color:white;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    box-shadow:0 6px 25px rgba(233,30,99,.4);
+}
+
+.hero-btn:hover{
+    background:#c2185b;
+    transform:translateY(-2px);
+}
+
+/* ================= SEARCH ================= */
+
+.search-area{
+    max-width:1000px;
+    margin:-30px auto 30px;
+    position:relative;
+    z-index:10;
+    padding:0 20px;
+}
+
+.search-box{
+    background:white;
+    padding:12px;
+    border-radius:50px;
+    box-shadow:0 6px 25px rgba(0,0,0,.14);
+    display:flex;
+    align-items:center;
+}
+
+.search-box span{
+    font-size:21px;
+    padding-left:15px;
+}
+
+.search-box input{
+    width:100%;
+    border:none;
+    outline:none;
+    padding:14px 18px;
+    font-size:16px;
+    background:transparent;
+}
+
+/* ================= SECTION ================= */
+
+.section{
+    max-width:1200px;
+    margin:auto;
+    padding:35px 20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:28px;
+}
+
+.section-title h2{
+    font-size:34px;
+    margin-bottom:8px;
+}
+
+.section-title p{
+    color:#777;
+}
+
+/* ================= CATEGORIES ================= */
+
+.categories{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-bottom:30px;
+}
+
+.category-btn{
+    border:1px solid #eee;
+    background:white;
+    padding:10px 17px;
+    border-radius:25px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.25s;
+}
+
+.category-btn:hover,
+.category-btn.active{
+    background:#e91e63;
+    color:white;
+    border-color:#e91e63;
+    transform:translateY(-2px);
+}
+
+/* ================= RESULT ================= */
+
+.result-info{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:20px;
+    gap:10px;
+}
+
+.result-info h3{
+    font-size:24px;
+}
+
+.all-btn{
+    border:none;
+    background:#222;
+    color:white;
+    padding:9px 17px;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+/* ================= SHAYARI GRID ================= */
+
+.shayari-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:22px;
+}
+
+.shayari-card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.09);
+    transition:.3s;
+}
+
+.shayari-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 30px rgba(0,0,0,.16);
+}
+
+/* ================= SHAYARI CARD DESIGN ================= */
+.shayari-card{position:relative;border-radius:24px;overflow:hidden;min-height:430px;background:#fff;border:1px solid rgba(233,30,99,.14);box-shadow:0 10px 30px rgba(80,20,50,.10);transition:.35s ease}.shayari-card:hover{transform:translateY(-8px);box-shadow:0 18px 42px rgba(80,20,50,.18)}.photo{min-height:430px;position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:22px;isolation:isolate}.photo.cat-all{background:linear-gradient(145deg,#ffb6d5,#b88cff)}.photo.cat-prem{background:linear-gradient(145deg,#ff6f9f,#e91e63,#ffb6c9)}.photo.cat-romantic{background:linear-gradient(145deg,#7a123c,#d81b60,#ff6b9d)}.photo.cat-sad{background:linear-gradient(145deg,#172554,#312e81,#4c1d95)}.photo.cat-breakup{background:linear-gradient(145deg,#12080d,#3b0a18,#8b102f)}.photo.cat-memory{background:linear-gradient(145deg,#c4b5fd,#f0abfc,#fbcfe8)}.photo.cat-friendship{background:linear-gradient(145deg,#38bdf8,#6366f1,#a78bfa)}.photo.cat-attitude{background:linear-gradient(145deg,#050505,#24113d,#7f1d1d)}.photo.cat-motivation{background:linear-gradient(145deg,#fb923c,#ef4444,#991b1b)}.photo.cat-parents{background:linear-gradient(145deg,#fff1c1,#f9c97d,#e89a9a)}.photo.cat-morning{background:linear-gradient(145deg,#fbbf24,#fb923c,#7c3aed)}.photo:before,.photo:after{content:"";position:absolute;border-radius:50%;filter:blur(3px);opacity:.28;z-index:0}.photo:before{width:150px;height:150px;top:-45px;right:-35px;background:rgba(255,255,255,.9)}.photo:after{width:110px;height:110px;bottom:-35px;left:-30px;background:rgba(255,255,255,.7)}.photo-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(to top,rgba(20,0,15,.72),rgba(20,0,15,.22) 58%,rgba(255,255,255,.04))}.shayari-content{position:relative;z-index:2;width:100%;padding:22px;border-radius:20px;color:white;background:rgba(255,255,255,.13);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.28);box-shadow:0 10px 28px rgba(0,0,0,.18)}.category-label{display:inline-block;margin-bottom:12px;padding:6px 12px;border-radius:20px;background:rgba(255,255,255,.92);color:#d81b60;font-size:13px;font-weight:800}.shayari-text{color:white;font-size:19px;line-height:1.75;font-weight:700;text-shadow:0 2px 9px rgba(0,0,0,.55)}.card-actions{position:relative;z-index:3;padding:0 22px 22px;background:transparent}.action-btn{border:1px solid rgba(255,255,255,.65);background:rgba(255,255,255,.92);color:#d81b60;border-radius:18px;padding:8px 11px;font-weight:700;cursor:pointer;transition:.25s}.action-btn:hover{transform:translateY(-2px) scale(1.03);background:#e91e63;color:white}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1000px){
+
+    .shayari-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+}
+
+@media(max-width:750px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .hero{
+        min-height:420px;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    .shayari-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:15px;
+    }
+
+    .photo{
+        height:390px;
+    }
+
+    .shayari-text{
+        font-size:17px;
+    }
+
+    .result-info{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+}
+
+@media(max-width:500px){
+
+    .nav-container{
+        padding:12px 14px;
+    }
+
+    .logo{
+        font-size:19px;
+    }
+
+    .hero{
+        min-height:430px;
+        padding:35px 15px;
+    }
+
+    .hero h1{
+        font-size:31px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    .hero-btn{
+        padding:12px 23px;
+    }
+
+    .shayari-grid{
+        grid-template-columns:1fr;
+    }
+
+    .photo{
+        height:480px;
+    }
+
+    .shayari-text{
+        font-size:20px;
+    }
+
+    .category-btn{
+        font-size:13px;
+        padding:9px 13px;
+    }
+
+}
+
+/* ================= EXTRA MOBILE ================= */
+
+@media(max-width:360px){
+
+    .logo{
+        font-size:17px;
+    }
+
+    .dark-btn{
+        width:36px;
+        height:36px;
+    }
+
+    .shayari-text{
+        font-size:18px;
+    }
+
+}
+
+
+/* ================= PREMIUM FRONT PAGE ================= */
+.hero{min-height:620px;overflow:hidden;background:radial-gradient(circle at 15% 20%,rgba(255,145,190,.38),transparent 32%),radial-gradient(circle at 85% 75%,rgba(151,93,255,.30),transparent 34%),linear-gradient(135deg,#7b163f 0%,#e91e63 48%,#7c3aed 100%);}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.08),rgba(20,0,25,.38));pointer-events:none;}
+.hero-content{position:relative;z-index:4;max-width:900px;padding:35px 20px;}
+.hero-badge{display:inline-block;padding:9px 17px;border:1px solid rgba(255,255,255,.38);border-radius:30px;background:rgba(255,255,255,.12);backdrop-filter:blur(10px);font-weight:700;margin-bottom:20px;box-shadow:0 8px 30px rgba(0,0,0,.12);}
+.hero h1{font-size:clamp(42px,7vw,72px);line-height:1.08;margin-bottom:18px;letter-spacing:-1px;}
+.hero h1 span{background:linear-gradient(90deg,#fff,#ffd2e3);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.hero p{font-size:20px;line-height:1.8;max-width:720px;margin:0 auto 28px;color:rgba(255,255,255,.94);}
+.hero-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;}
+.hero-btn{border:1px solid rgba(255,255,255,.25);transition:.3s;position:relative;overflow:hidden;}
+.hero-btn:hover{transform:translateY(-4px) scale(1.02);box-shadow:0 12px 32px rgba(0,0,0,.22);}
+.hero-btn-light{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.55);backdrop-filter:blur(8px);}
+.hero-stats{display:flex;justify-content:center;gap:14px;margin-top:34px;flex-wrap:wrap;}
+.hero-stats div{min-width:125px;padding:13px 20px;border:1px solid rgba(255,255,255,.24);border-radius:18px;background:rgba(255,255,255,.10);backdrop-filter:blur(10px);}
+.hero-stats strong{display:block;font-size:24px;line-height:1.1;}
+.hero-stats small{opacity:.85;}
+.hero-orb{position:absolute;border-radius:50%;filter:blur(2px);z-index:2;opacity:.34;background:rgba(255,255,255,.35);animation:floatOrb 7s ease-in-out infinite;}
+.orb-one{width:220px;height:220px;top:-80px;left:-50px;}
+.orb-two{width:300px;height:300px;right:-110px;bottom:-110px;animation-delay:-3s;}
+.floating-hearts{position:absolute;inset:0;z-index:3;pointer-events:none;font-size:28px;letter-spacing:70px;opacity:.28;animation:heartFloat 8s linear infinite;white-space:nowrap;padding-top:12%;}
+@keyframes floatOrb{50%{transform:translateY(-18px) scale(1.05);}}
+@keyframes heartFloat{0%{transform:translateY(20px);opacity:.08}50%{opacity:.28}100%{transform:translateY(-25px);opacity:.08}}
+.home-categories{max-width:1200px;margin:0 auto;padding:62px 20px 42px;}
+.home-cat-heading{text-align:center;margin-bottom:28px;}
+.home-cat-heading span{display:inline-block;color:#e91e63;font-weight:800;font-size:14px;margin-bottom:8px;}
+.home-cat-heading h2{font-size:32px;margin-bottom:8px;}
+.home-cat-heading p{color:#777;}
+.home-cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+.home-cat{border:0;min-height:155px;border-radius:24px;padding:20px;text-align:left;color:white;cursor:pointer;position:relative;overflow:hidden;box-shadow:0 10px 28px rgba(70,20,60,.12);transition:.3s;display:flex;flex-direction:column;justify-content:flex-end;isolation:isolate;}
+.home-cat:before{content:"";position:absolute;width:110px;height:110px;right:-25px;top:-30px;border-radius:50%;background:rgba(255,255,255,.18);filter:blur(2px);z-index:-1;}
+.home-cat:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(0,0,0,.25));z-index:-1;}
+.home-cat:hover{transform:translateY(-7px) scale(1.015);box-shadow:0 18px 36px rgba(70,20,60,.20);}
+.home-cat b{font-size:34px;margin-bottom:6px;text-shadow:0 3px 10px rgba(0,0,0,.18);}
+.home-cat strong{font-size:20px;}
+.home-cat small{opacity:.9;margin-top:3px;}
+.home-cat.cat-all{background:linear-gradient(145deg,#ffb6d5,#b88cff)}
+.home-cat.cat-prem{background:linear-gradient(145deg,#ff6f9f,#e91e63,#ffb6c9)}
+.home-cat.cat-romantic{background:linear-gradient(145deg,#7a123c,#d81b60,#ff6b9d)}
+.home-cat.cat-sad{background:linear-gradient(145deg,#172554,#312e81,#4c1d95)}
+.home-cat.cat-breakup{background:linear-gradient(145deg,#12080d,#3b0a18,#8b102f)}
+.home-cat.cat-memory{background:linear-gradient(145deg,#c4b5fd,#f0abfc,#fbcfe8)}
+.home-cat.cat-friendship{background:linear-gradient(145deg,#38bdf8,#6366f1,#a78bfa)}
+.home-cat.cat-attitude{background:linear-gradient(145deg,#050505,#24113d,#7f1d1d)}
+.home-cat.cat-motivation{background:linear-gradient(145deg,#fb923c,#ef4444,#991b1b)}
+.home-cat.cat-parents{background:linear-gradient(145deg,#fff1c1,#f9c97d,#e89a9a);color:#5c351f;}
+.home-cat.cat-morning{background:linear-gradient(145deg,#fbbf24,#fb923c,#7c3aed)}
+.search-area{margin:-24px auto 30px;}
+.search-box{border:1px solid rgba(233,30,99,.10);}
+.section{padding-top:28px;}
+.section-title h2{font-weight:800;}
+@media(max-width:1000px){.home-cat-grid{grid-template-columns:repeat(3,1fr);}}
+@media(max-width:750px){.hero{min-height:570px}.hero p{font-size:17px}.home-cat-grid{grid-template-columns:repeat(2,1fr);gap:12px}.home-cat{min-height:140px}.home-cat-heading h2{font-size:27px}.floating-hearts{letter-spacing:28px;font-size:22px;}}
+@media(max-width:500px){.hero{min-height:600px;padding:25px 10px}.hero h1{font-size:38px}.hero-stats div{min-width:95px;padding:11px 10px}.hero-stats strong{font-size:20px}.home-categories{padding:45px 14px 30px}.home-cat-grid{grid-template-columns:1fr 1fr}.home-cat{min-height:145px;padding:16px;border-radius:20px}.home-cat b{font-size:28px}.home-cat strong{font-size:17px}.home-cat small{font-size:12px}.hero-actions .hero-btn{padding:12px 18px;}}
+body.dark .home-cat-heading p{color:#aaa;}
+body.dark .home-cat-heading h2{color:#eee;}
+body.dark .home-categories{background:transparent;}
+
+</style>
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+<div class="nav-container">
+
+<a href="#home" class="logo">
+Marathi <span>Love Status ❤️</span>
+</a>
+
+<div class="nav-links">
+
+<a href="#home">होम</a>
+<a href="#shayari">शायरी</a>
+<a href="#about">आमच्याबद्दल</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+<button class="dark-btn" onclick="toggleDark()">
+🌙
+</button>
+
+</div>
+
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+  <div class="hero-orb orb-one"></div>
+  <div class="hero-orb orb-two"></div>
+  <div class="floating-hearts" aria-hidden="true">❤️ ✨ 💕 ❤️ ✨</div>
+  <div class="hero-content">
+    <div class="hero-badge">✨ तुमच्या भावनांचा सुंदर ठाव</div>
+    <h1>Marathi Love <span>Status ❤️</span></h1>
+    <p>प्रेम, आठवणी, मैत्री, Attitude आणि प्रेरणा —<br>मनातलं प्रत्येक भावनांना सुंदर मराठी शब्द द्या.</p>
+    <div class="hero-actions">
+      <a href="#shayari" class="hero-btn">❤️ शायरी वाचा</a>
+      <a href="#categories-home" class="hero-btn hero-btn-light">✨ Categories पहा</a>
+    </div>
+    <div class="hero-stats">
+      <div><strong>200+</strong><small>शायरी</small></div>
+      <div><strong>11</strong><small>Categories</small></div>
+      <div><strong>❤️</strong><small>खास भावना</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="home-categories" id="categories-home">
+  <div class="home-cat-heading">
+    <span>💖 Explore</span>
+    <h2>तुमच्या mood प्रमाणे शायरी निवडा</h2>
+    <p>एका क्लिकमध्ये तुमच्या आवडीची category उघडा.</p>
+  </div>
+  <div class="home-cat-grid">
+    <button class="home-cat cat-all" onclick="document.getElementById('shayari').scrollIntoView({behavior:'smooth'});showCategory('all',document.querySelector('.category-btn'))"><b>✨</b><strong>सर्व</strong><small>सगळ्या शायरी</small></button>
+    <button class="home-cat cat-prem" onclick="document.getElementById('shayari').scrollIntoView({behavior:'smooth'});showCategory('prem',document.querySelectorAll('.category-btn')[1])"><b>❤️</b><strong>प्रेम</strong><small>मनापासून प्रेम</small></button>
+    <button class="home-cat cat-romantic" onclick="document.getElementById('shayari').scrollIntoView({behavior:'smooth'});showCategory('romantic',document.querySelectorAll('.category-btn')[2])"><b>💖</b><strong>रोमँटिक</strong><small>प्रेमाची जादू</small></button>
+    <button class="home-cat cat-sad" onclick="document.getElementById('shayari').scrollIntoView({behavior:'smooth'});showCategory('sad',document.querySelectorAll('.category-btn')[3])"><b>💔</b><strong>Sad</strong><small>मनातील वेदना</small></button>
+    <button class="home-cat cat-breakup" onclick="document.getElementById('shayari').scrollIntoView({behavior:'smooth'});showCategory('breakup',document.querySelectorAll('.category-btn')[4])"><b>🥀</b><strong>ब्रेकअप</strong><small>तुटलेल्या भावना</small></button>
+    <button class="home-cat cat-memory" onclick="document.getElementById('shayari').scrollIntoView({behavior:'smooth'});showCategory('memory',document.querySelectorAll('.category-btn')[5])"><b>🌹</b><strong>आठवणी</strong><small>जुन्या सुंदर आठवणी</small></button>
+    <button class="home-cat cat-friendship" onclick="document.getElementById('shayari').scrollIntoView({behavior:'smooth'});showCategory('friendship',document.querySelectorAll('.category-btn')[6])"><b>🤝</b><strong>मैत्री</strong><small>खास मित्रांसाठी</small></button>
+    <button class="home-cat cat-attitude" onclick="document.getElementById('shayari').scrollIntoView({behavior:'smooth'});showCategory('attitude',document.querySelectorAll('.category-btn')[7])"><b>😎</b><strong>Attitude</strong><small>दमदार अंदाज</small></button>
+    <button class="home-cat cat-motivation" onclick="document.getElementById('shayari').scrollIntoView({behavior:'smooth'});showCategory('motivation',document.querySelectorAll('.category-btn')[8])"><b>🔥</b><strong>प्रेरणा</strong><small>जिंकण्याची जिद्द</small></button>
+    <button class="home-cat cat-parents" onclick="document.getElementById('shayari').scrollIntoView({behavior:'smooth'});showCategory('parents',document.querySelectorAll('.category-btn')[9])"><b>👨‍👩‍👧</b><strong>आई-वडील</strong><small>मायेची ऊब</small></button>
+    <button class="home-cat cat-morning" onclick="document.getElementById('shayari').scrollIntoView({behavior:'smooth'});showCategory('morning',document.querySelectorAll('.category-btn')[10])"><b>🌞</b><strong>शुभ सकाळ/रात्र</strong><small>सुंदर दिवसाची सुरुवात</small></button>
+  </div>
+</section>
+
+
+<!-- ================= SEARCH ================= -->
+
+<div class="search-area">
+
+<div class="search-box">
+
+<span>🔍</span>
+
+<input
+type="text"
+id="searchInput"
+placeholder="शायरी शोधा..."
+oninput="searchShayari()"
+>
+
+</div>
+
+</div>
+
+
+<!-- ================= SHAYARI ================= -->
+
+<section class="section" id="shayari">
+
+<div class="section-title">
+
+<h2>💖 मराठी शायरी संग्रह</h2>
+
+<p>
+तुमच्या मनातील भावना व्यक्त करणारी शायरी
+</p>
+
+</div>
+
+
+<!-- CATEGORIES -->
+
+<div class="categories">
+
+<button class="category-btn active"
+onclick="showCategory('all',this)">
+✨ सर्व
+</button>
+
+<button class="category-btn"
+onclick="showCategory('prem',this)">
+❤️ प्रेम
+</button>
+
+<button class="category-btn"
+onclick="showCategory('romantic',this)">
+💖 रोमँटिक
+</button>
+
+<button class="category-btn"
+onclick="showCategory('sad',this)">
+💔 Sad
+</button>
+
+<button class="category-btn"
+onclick="showCategory('breakup',this)">
+🥀 ब्रेकअप
+</button>
+
+<button class="category-btn"
+onclick="showCategory('memory',this)">
+🌹 आठवणी
+</button>
+
+<button class="category-btn"
+onclick="showCategory('friendship',this)">
+🤝 मैत्री
+</button>
+
+<button class="category-btn"
+onclick="showCategory('attitude',this)">
+😎 Attitude
+</button>
+
+<button class="category-btn"
+onclick="showCategory('motivation',this)">
+🔥 प्रेरणा
+</button>
+
+<button class="category-btn"
+onclick="showCategory('parents',this)">
+👨‍👩‍👧 आई-वडील
+</button>
+
+<button class="category-btn"
+onclick="showCategory('morning',this)">
+🌞 शुभ सकाळ/रात्र
+</button>
+
+</div>
+
+
+<div class="result-info">
+
+<h3 id="categoryTitle">
+✨ सर्व शायरी
+</h3>
+
+<button class="all-btn" onclick="showAll()">
+सर्व शायरी
+</button>
+
+</div>
+
+
+<div class="shayari-grid" id="shayariGrid"></div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+<div class="about-inner">
+
+<h2>
+❤️ Marathi Love Status
+</h2>
+
+<p>
+Marathi Love Status वर तुम्हाला प्रेम,
+रोमँटिक, Sad, Breakup, आठवणी,
+मैत्री, Attitude, प्रेरणा, आई-वडील
+आणि शुभ सकाळ/रात्र अशा विविध प्रकारच्या
+सुंदर मराठी शायरी मिळतील.
+</p>
+
+<br>
+
+<p>
+तुमच्या भावना तुमच्या खास व्यक्तीपर्यंत
+पोहोचवण्यासाठी आमच्या शायरीचा वापर करा.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+<div class="contact-box">
+
+<h2>
+📩 Contact Us
+</h2>
+
+<p>
+Marathi Love Status शी संपर्क साधण्यासाठी
+</p>
+
+<br>
+
+<p>
+📧
+<a href="mailto:nplovestatus@gmail.com">
+nplovestatus@gmail.com
+</a>
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+© 2026
+<strong>Marathi Love Status</strong>
+
+<br>
+
+सर्व हक्क राखीव ❤️
+
+</footer>
+
+
+<!-- TOP BUTTON -->
+
+<button
+class="top-btn"
+id="topBtn"
+onclick="window.scrollTo({top:0,behavior:'smooth'})">
+↑
+</button>
+
+
+<script>
+
+/* =====================================================
+   IMAGES
+===================================================== */
+
+
+
+
+/* =====================================================
+   SHAYARI DATA
+===================================================== */
+
+const categories = {
+
+prem:{
+label:"❤️ प्रेम",
+texts:[
+"तुझं हसणं पाहिलं की माझा प्रत्येक दिवस सुंदर होतो, कारण माझ्या आनंदाचं कारण तूच आहेस.",
+"प्रेम म्हणजे रोज बोलणं नाही, तर दूर असूनही मनापासून एकमेकांची काळजी घेणं.",
+"तुझ्या सोबत असताना वेळ कसा जातो कळत नाही, पण तू नसताना प्रत्येक क्षण खूप मोठा वाटतो.",
+"तू आयुष्यात आलीस आणि साध्या दिवसांनाही सुंदर आठवणींचं रूप मिळालं.",
+"माझ्या मनाला शांतता हवी असते तेव्हा तुझं नावच नकळत ओठांवर येतं.",
+"तुझ्यासोबत आयुष्याची प्रत्येक छोटी गोष्टही खास वाटते.",
+"जग कितीही सुंदर असलं तरी तुझ्या सोबतच्या एका क्षणाची सर त्याला नाही.",
+"तुझ्यावर प्रेम करणं ही माझी आवड नाही, तर माझ्या मनाची सगळ्यात सुंदर सवय आहे.",
+"तुझ्या डोळ्यांत पाहिलं की मला माझं संपूर्ण जग दिसतं.",
+"तू जवळ असलीस की शब्द कमी पडतात आणि मन मात्र खूप काही सांगत राहतं.",
+"माझ्या प्रत्येक प्रार्थनेत काही मागत असेन तर फक्त तुझी साथ मागतो.",
+"तू आहेस म्हणून माझ्या आयुष्याला एक सुंदर अर्थ मिळाला आहे.",
+"तुझ्यासोबत चाललेला रस्ता कितीही लांब असला तरी मला तो छोटाच वाटतो.",
+"प्रेमात मोठ्या वचनांची गरज नसते, रोजच्या छोट्या काळजीत खरं प्रेम दिसतं.",
+"माझ्या चेहऱ्यावरचं हसू कितीही लपवलं तरी तुझं नाव ऐकलं की ते दिसून येतं.",
+"तुझ्याशिवाय आयुष्याची कल्पना केली की मनाला काहीतरी अपूर्ण वाटतं.",
+"तू माझ्या आयुष्यातली ती सुंदर व्यक्ती आहेस जिला गमावण्याची भीती रोज वाटते.",
+"तुझ्यासोबत घालवलेला प्रत्येक क्षण मी मनात जपून ठेवतो.",
+"तू भेटलीस हा माझ्या आयुष्यातला योगायोग नसून देवाने दिलेली सुंदर भेट आहे.",
+"मला आयुष्यभर काही नको, फक्त तुझा हात हातात आणि तुझी साथ सोबत हवी."
+]
+},
+
+romantic:{
+label:"💖 रोमँटिक",
+texts:[
+"तुझ्या जवळ बसलो की मनाला वेगळीच शांतता मिळते, जणू सगळं जग थोडं थांबतं.",
+"तुझ्या केसांतून येणारा वारा आणि तुझं हसणं, दोन्ही माझ्यासाठी प्रेमाची कविता आहेत.",
+"तुझ्या एका मेसेजने माझा संपूर्ण दिवस सुंदर होतो.",
+"तुझं नाव फोनवर दिसलं की चेहऱ्यावर आपोआप हसू येतं.",
+"तुझ्यासोबत चहा प्यायचा साधा क्षणसुद्धा मला एखाद्या सुंदर डेटसारखा वाटतो.",
+"तुझा हात हातात घेतला की बाकी जगाची जाणीवच राहत नाही.",
+"तू जवळ असलीस की मनाला दुसऱ्या कोणत्याही गोष्टीची गरज भासत नाही.",
+"तुझ्या आवाजात अशी जादू आहे की कितीही राग असला तरी क्षणात शांत होतो.",
+"तुझ्या एका नजरेत माझ्या हजार भावना दडलेल्या असतात.",
+"रात्र कितीही सुंदर असली तरी तुझ्यासोबतची रात्रच मला खास वाटते.",
+"तुझ्या सोबत चालताना रस्ता नाही, तर आयुष्य सुंदर वाटतं.",
+"तुझ्या मिठीत काही क्षण राहिलं की सगळ्या चिंता दूर जातात.",
+"तुझं हसणं माझ्यासाठी जगातलं सगळ्यात सुंदर संगीत आहे.",
+"तू समोर असताना शब्दांची गरजच नसते, डोळेच सगळं बोलून जातात.",
+"तुझ्यासोबतचा प्रत्येक फोटो माझ्या आयुष्यातली एक सुंदर आठवण बनतो.",
+"तुझ्या जवळ असताना मनाला एकच इच्छा होते—हा क्षण कधीच संपू नये.",
+"तू माझ्या आयुष्यात आलीस आणि प्रेमाचा खरा अर्थ समजला.",
+"तुझं नाव घेताच मनात फुलांसारख्या सुंदर भावना उमलतात.",
+"तुझ्यासोबत एक छोटंसं जग बनवायचं आहे, जिथे फक्त तू आणि मी असू.",
+"तुझ्या प्रेमात पडणं सोपं होतं, पण तुझ्यातून बाहेर पडणं अशक्य आहे."
+]
+},
+
+sad:{
+label:"💔 Sad",
+texts:[
+"काही लोक मनात कायमचे राहतात, फक्त आपल्या आयुष्यात मात्र राहत नाहीत.",
+"हसताना सगळ्यांना वाटतं आपण आनंदी आहोत, पण मनातलं दुःख फक्त आपल्यालाच माहीत असतं.",
+"ज्याच्याकडून प्रेमाची अपेक्षा होती, त्याच्याकडूनच शांततेची शिक्षा मिळाली.",
+"कधी कधी डोळ्यांत पाणी नसतं, पण मन मात्र आतून खूप रडत असतं.",
+"आपण ज्यांना मनापासून जपतो, तेच कधी कधी आपल्याला सर्वात जास्त दुखावतात.",
+"तुझी आठवण येते म्हणून नाही रडत, तर तू आता माझी राहिली नाहीस म्हणून रडतो.",
+"मनाला समजावणं सोपं नाही, कारण मन अजूनही तुझ्यावर विश्वास ठेवतं.",
+"काही जखमा दिसत नाहीत, पण त्यांची वेदना आयुष्यभर जाणवत राहते.",
+"तू बदललीस की परिस्थिती, आजही हा प्रश्न माझ्या मनात आहे.",
+"आपण जवळ होतो तेव्हा वेळ कमी पडायचा, आता आठवणी खूप आहेत पण तू नाहीस.",
+"कधी कधी शांत राहणं म्हणजे ठीक असणं नसतं, तर खूप काही सहन करणं असतं.",
+"तुझ्या आठवणींना विसरायचा प्रयत्न केला, पण मनाने प्रत्येक वेळी मला हरवलं.",
+"ज्याला गमावण्याची भीती होती, त्यालाच एक दिवस गमावलं.",
+"मनापासून केलेलं प्रेम परत मिळेलच असं नसतं.",
+"काही नाती संपतात, पण त्यांच्यासोबत जोडलेल्या आठवणी कधीच संपत नाहीत.",
+"डोळे शांत आहेत, पण मनात अजूनही हजार प्रश्नांची गर्दी आहे.",
+"तू नसल्याची सवय झाली आहे, पण तुझी आठवण येणं अजूनही बंद झालं नाही.",
+"काही लोक दूर जात नाहीत, ते फक्त आपल्या आयुष्यातून कायमचे निघून जातात.",
+"तुझ्यासाठी मी बदललो, पण शेवटी तूच बदललीस.",
+"मन तुटल्याचा आवाज कुणाला ऐकू येत नाही, फक्त त्याची वेदना आपल्याला जाणवते."
+]
+},
+
+breakup:{
+label:"🥀 ब्रेकअप",
+texts:[
+"नातं संपलं म्हणून प्रेम संपत नाही, काही भावना शेवटपर्यंत मनात जिवंत राहतात.",
+"तू गेलीस, पण तुझ्या आठवणींनी माझ्या आयुष्यातून जाण्याचं नाव घेतलं नाही.",
+"आपण वेगळे झालो, पण माझ्या मनातली तुझी जागा अजूनही तशीच आहे.",
+"कधी वाटलं नव्हतं की ज्याच्यासोबत भविष्य पाहिलं, त्याच्यापासून दूर जावं लागेल.",
+"ब्रेकअपचा त्रास नातं तुटण्याचा नसतो, तर स्वप्नं तुटण्याचा असतो.",
+"तू माझी राहिली नाहीस, पण तुझ्यावर केलेलं प्रेम खोटं नव्हतं.",
+"शेवटचा निरोप देताना ओठ शांत होते, पण डोळे सगळं सांगत होते.",
+"काही नाती दोघांनी तोडलेली नसतात, परिस्थिती त्यांना तोडते.",
+"तुझ्याशिवाय जगायला शिकलो, पण तुझ्याशिवाय खुश राहायला अजून वेळ लागेल.",
+"तू दुसऱ्याची झालीस, म्हणून माझं प्रेम कमी झालं नाही.",
+"ज्याला आयुष्यभरासाठी निवडलं होतं, त्याच्यासोबत काही वर्षंसुद्धा राहता आलं नाही.",
+"आता तुझी वाट पाहत नाही, पण जुन्या आठवणी अजूनही थांबवत नाहीत.",
+"आपली गोष्ट सुंदर होती, फक्त तिचा शेवट सुंदर नव्हता.",
+"तू सोडून गेलीस, पण मला माझी किंमत ओळखायला शिकवून गेलीस.",
+"कधी कधी नातं वाचवण्यासाठी स्वतःला हरवावं लागतं, आणि ते योग्य नसतं.",
+"तुझी आठवण आली की मन म्हणतं परत ये, पण स्वाभिमान म्हणतो आता नको.",
+"आपण एकमेकांचे होतो, ही आठवणच आता माझ्यासाठी पुरेशी आहे.",
+"तुझ्यासोबतचे क्षण परत मिळणार नाहीत, पण त्यांना विसरणंही शक्य नाही.",
+"तू गेल्यानंतर समजलं, काही लोकांची किंमत त्यांच्या नसण्याने कळते.",
+"आता प्रेमावर विश्वास आहे, फक्त चुकीच्या व्यक्तीवर नाही."
+]
+},
+
+memory:{
+label:"🌹 आठवणी",
+texts:[
+"काही आठवणी फोटोमध्ये नसतात, त्या मनाच्या कोपऱ्यात कायम जपलेल्या असतात.",
+"जुने दिवस परत येत नाहीत, पण त्यांची आठवण प्रत्येक वेळी चेहऱ्यावर हसू आणते.",
+"तुझ्यासोबत घालवलेले क्षण आजही मनात तितकेच ताजे आहेत.",
+"कधी एखादं गाणं ऐकलं की जुने दिवस अचानक डोळ्यांसमोर उभे राहतात.",
+"आठवणींचीही एक गंमत असते, त्या दूर गेलेल्या माणसाला जवळ आणतात.",
+"काही क्षण खूप छोटे असतात, पण आठवणी मात्र आयुष्यभराच्या असतात.",
+"तुझ्यासोबतचा पहिला संवाद आजही मनाला तितकाच खास वाटतो.",
+"ज्या जागी आपण भेटलो होतो, तिथे आजही तुझी आठवण येते.",
+"काळ पुढे जातो, पण काही आठवणी काळाच्या पुढेही जिवंत राहतात.",
+"तुझं हसणं आठवलं की मनात पुन्हा एकदा जुन्या दिवसांची सकाळ होते.",
+"आपल्या गप्पा संपल्या, पण त्या गप्पांच्या आठवणी अजूनही सुरू आहेत.",
+"जुन्या फोटोंमध्ये चेहरे जुने असतात, पण भावना अजूनही नवीन वाटतात.",
+"कधी कधी भूतकाळ आठवतो आणि मन नकळत वर्तमान विसरून जातं.",
+"तुझ्या आठवणींची जागा माझ्या मनात कुणीच घेऊ शकत नाही.",
+"आपण सोबत होतो तो काळ आयुष्याचा सर्वात सुंदर भाग होता.",
+"काही आठवणी विसरण्यासाठी नसतात, त्या आपल्याला आपण कोण होतो हे सांगतात.",
+"आजही तुझा जुना मेसेज दिसला की मनात हजार भावना जाग्या होतात.",
+"आपल्या छोट्या छोट्या भांडणांचीसुद्धा आता गोड आठवण झाली आहे.",
+"तू दूर आहेस, पण आठवणींच्या माध्यमातून रोज माझ्या जवळ असतेस.",
+"आठवणी जपून ठेवाव्यात, कारण माणसं कधी परत येतील सांगता येत नाही."
+]
+},
+
+friendship:{
+label:"🤝 मैत्री",
+texts:[
+"खरा मित्र तोच, जो तुमच्या हसण्यात नाही तर तुमच्या शांततेतलं दुःख ओळखतो.",
+"मैत्री रक्ताचं नातं नसतं, पण कधी कधी रक्ताच्या नात्यापेक्षाही घट्ट असतं.",
+"जग बदललं तरी काही मित्रांची साथ बदलत नाही.",
+"खरा मित्र हजार ओळखींपेक्षा जास्त मौल्यवान असतो.",
+"ज्याच्यासोबत काहीही न बोलता तासभर बसता येतं, तोच खरा मित्र.",
+"मैत्रीमध्ये रोज बोलणं गरजेचं नसतं, मनात जागा असणं गरजेचं असतं.",
+"आयुष्यात पैसे कमी-जास्त झाले तरी खरा मित्र सोबत असेल तर माणूस श्रीमंत असतो.",
+"मित्र म्हणजे आपल्या आयुष्याच्या कहाणीतील सगळ्यात मजेदार अध्याय.",
+"तुझ्यासारखा मित्र मिळणं हा माझ्या आयुष्यातला सुंदर योगायोग आहे.",
+"जग कितीही मोठं असलं तरी खऱ्या मित्रासोबतचं छोटंसं जग पुरेसं असतं.",
+"काही मित्र भेटतात आणि आयुष्यभरासाठी कुटुंबाचा भाग बनतात.",
+"खरी मैत्री अंतराने कमी होत नाही, उलट आठवणींनी आणखी घट्ट होते.",
+"मित्र तोच जो तुमच्या चुका दाखवतो आणि तरीही तुमची साथ सोडत नाही.",
+"आयुष्यात हजार लोक येतील, पण मनात कायम राहणारे मित्र फार कमी असतात.",
+"आपल्या वेडेपणाला समजून घेणारा मित्र मिळाला की आयुष्य मजेदार होतं.",
+"खरी मैत्री शब्दांपेक्षा विश्वासावर टिकते.",
+"मित्रांसोबत घालवलेले क्षण आयुष्याच्या सर्वात सुंदर आठवणी बनतात.",
+"अडचणीत फोन करण्यापूर्वीच जो सोबत उभा राहतो, तोच खरा मित्र.",
+"माझ्या आयुष्यातली अनेक सुंदर कारणं म्हणजे माझे मित्र.",
+"मित्र कमी असले तरी चालतील, पण मनापासून असले पाहिजेत."
+]
+},
+
+attitude:{
+label:"😎 Attitude",
+texts:[
+"माझी ओळख माझ्या नावाने नाही, तर माझ्या कामाने व्हावी अशी माझी इच्छा आहे.",
+"लोक काय म्हणतील याचा विचार केला असता तर आज मी इथे नसतो.",
+"मी बदललो नाही, फक्त लोकांना ओळखायला शिकलो.",
+"ज्यांना माझी किंमत नाही, त्यांच्यासाठी माझ्याकडे वेळही नाही.",
+"स्वाभिमान जपतो, म्हणून प्रत्येक ठिकाणी झुकत नाही.",
+"माझ्या शांततेला कमजोरी समजू नका, योग्य वेळेची मी वाट पाहतो.",
+"स्पर्धा कुणाशीच नाही, रोज कालच्या स्वतःपेक्षा चांगलं व्हायचं आहे.",
+"लोकांच्या मतांपेक्षा माझ्या मनाचं समाधान मला जास्त महत्त्वाचं आहे.",
+"मी माझ्या पद्धतीने जगतो, कारण आयुष्य माझं आहे.",
+"कुणाला कमी लेखून मोठं होण्यापेक्षा स्वतःला मोठं करणं मला आवडतं.",
+"ज्यांनी मला कमी समजलं, त्यांच्यासाठी माझं यशच उत्तर असेल.",
+"मी साधा आहे, पण माझा स्वाभिमान खूप मोठा आहे.",
+"प्रत्येकाला खुश ठेवण्याचा प्रयत्न केला तर स्वतःला कधीच खुश ठेवता येत नाही.",
+"माझं मौन हे माझं उत्तर आहे, प्रत्येक प्रश्नाला शब्दांची गरज नसते.",
+"वेळ बदलतो, परिस्थिती बदलते आणि मग लोकांची मतंही बदलतात.",
+"माझ्यावर विश्वास ठेवणारे कमी असले तरी पुरेसे आहेत.",
+"मी कोणाच्या सावलीत उभा राहत नाही, स्वतःची ओळख बनवतो.",
+"जिंकण्याची सवय नाही, पण हार मानण्याचीही सवय नाही.",
+"माझा रस्ता वेगळा आहे, म्हणून माझं ध्येयही वेगळं आहे.",
+"मला कुणाशी तुलना करायची नाही, माझी स्पर्धा फक्त माझ्याशी आहे."
+]
+},
+
+motivation:{
+label:"🔥 प्रेरणा",
+texts:[
+"स्वप्नं मोठी असतील तर मेहनतही मोठी करावी लागते.",
+"आजची मेहनत उद्याच्या यशाची पहिली पायरी असते.",
+"हार म्हणजे शेवट नाही, पुन्हा सुरुवात करण्याची संधी असते.",
+"जिथे लोक थांबतात, तिथूनच तुमची खरी सुरुवात होते.",
+"वेळ कठीण आहे म्हणून थांबू नका, हीच वेळ तुम्हाला मजबूत बनवते.",
+"तुमच्यावर विश्वास ठेवणारा एक माणूस पुरेसा आहे, तो तुम्ही स्वतः असला तरी.",
+"यश मिळायला वेळ लागतो, पण प्रयत्न सोडायला एक क्षण पुरतो.",
+"आजचा संघर्ष उद्याची सुंदर कथा बनणार आहे.",
+"छोट्या पावलांनी चालत राहा, मोठं अंतर नक्की पार होईल.",
+"अपयशाने घाबरू नका, प्रयत्न न करणं हीच खरी हार आहे.",
+"स्वप्नं फक्त पाहू नका, त्यांच्यासाठी रोज काहीतरी करा.",
+"लोक हसतील म्हणून थांबू नका, एक दिवस तेच लोक टाळ्या वाजवतील.",
+"तुमची परिस्थिती तुमचं भविष्य ठरवत नाही, तुमची मेहनत ठरवते.",
+"कठीण दिवस कायमचे नसतात, पण मजबूत माणसं कायम टिकतात.",
+"एक दिवस सगळं ठीक होईल, फक्त आज हार मानू नका.",
+"यशाचा रस्ता छोटा नसतो, पण प्रत्येक पाऊल तुम्हाला जवळ घेऊन जातं.",
+"जिंकायचं असेल तर आधी स्वतःच्या भीतीवर विजय मिळवा.",
+"वेळ वाईट असू शकतो, पण तुमची जिद्द त्यापेक्षा मोठी असली पाहिजे.",
+"तुमच्या स्वप्नांना तुमच्या कारणांपेक्षा तुमची मेहनत मोठी असू द्या.",
+"आज स्वतःवर काम करा, उद्या जग तुमची ओळख विचारेल."
+]
+},
+
+parents:{
+label:"👨‍👩‍👧 आई-वडील",
+texts:[
+"आईच्या मायेपेक्षा मोठं जगात दुसरं कोणतंही सुख नाही.",
+"वडिलांच्या सावलीत उभं राहिलं की जगातल्या प्रत्येक उन्हाची भीती कमी होते.",
+"आईच्या हातचं जेवण आणि वडिलांचा आधार, यापेक्षा मोठी संपत्ती नाही.",
+"आई स्वतःच्या इच्छा बाजूला ठेवून मुलांची स्वप्नं पूर्ण करते.",
+"वडील कमी बोलतात, पण त्यांच्या प्रत्येक शांत त्यागात हजार शब्द असतात.",
+"आईच्या चेहऱ्यावरचं हसू हेच माझ्या आयुष्यातलं सर्वात मोठं यश आहे.",
+"वडिलांच्या कष्टांची किंमत पैशात मोजता येत नाही.",
+"आई म्हणजे प्रेम, वडील म्हणजे आधार आणि दोघे मिळून माझं संपूर्ण जग.",
+"आपण कितीही मोठे झालो तरी आईसाठी आपण तिचं छोटंसं मूलच असतो.",
+"वडिलांच्या खांद्यावर बसून पाहिलेलं जग आजही आयुष्यातली सुंदर आठवण आहे.",
+"आईच्या एका फोनमध्ये काळजी असते आणि वडिलांच्या एका प्रश्नात प्रेम.",
+"माझ्या यशामागे माझ्या आई-वडिलांच्या त्यागाची मोठी कहाणी आहे.",
+"देवाला रोज एकच मागणं आहे, माझ्या आई-वडिलांना नेहमी सुखी ठेव.",
+"आईची माया शब्दांत सांगता येत नाही, ती फक्त अनुभवता येते.",
+"वडिलांनी दिलेला संस्कार ही आयुष्यभर सोबत राहणारी सर्वात मोठी संपत्ती आहे.",
+"आई-वडिलांच्या चेहऱ्यावर आनंद पाहण्यासाठी माणूस कितीही मेहनत करू शकतो.",
+"घर मोठं असण्यापेक्षा घरात आई-वडिलांचं प्रेम असणं महत्त्वाचं आहे.",
+"माझ्या आयुष्यात जर कुणी निस्वार्थ प्रेम केलं असेल तर ते माझ्या आई-वडिलांनी.",
+"आई-वडील आहेत तोपर्यंत घर फक्त घर नसतं, ते आपलं जग असतं.",
+"आई-वडिलांची सेवा करण्याची संधी मिळणं हीसुद्धा देवाची मोठी कृपा आहे."
+]
+},
+
+morning:{
+label:"🌞 शुभ सकाळ/रात्र",
+texts:[
+"नवी सकाळ नवी आशा घेऊन आली आहे, आजचा दिवस सुंदर जावो. शुभ सकाळ! 🌞",
+"कालचं दुःख विसरून आज नव्याने हसा, कारण प्रत्येक सकाळ नवी संधी घेऊन येते.",
+"सूर्याची किरणं तुमच्या आयुष्यात आनंद घेऊन येवोत. शुभ सकाळ! ❤️",
+"आजचा दिवस तुमच्या स्वप्नांच्या दिशेने एक पाऊल पुढे नेणारा असो.",
+"मन शांत ठेवा, विचार सुंदर ठेवा आणि दिवस आपोआप सुंदर होईल.",
+"प्रत्येक सकाळ म्हणजे आयुष्याने दिलेली एक नवीन संधी. तिचं सोनं करा.",
+"तुमच्या चेहऱ्यावरचं हसू आजच्या दिवसाचं सगळ्यात सुंदर स्वागत असू दे.",
+"सकाळ सुंदर असते, जेव्हा मनात सकारात्मक विचार आणि चेहऱ्यावर हसू असतं.",
+"आज कोणताही दिवस असो, स्वतःवर विश्वास ठेवून त्याची सुरुवात करा.",
+"तुमच्या आयुष्यात आज आनंदाची नवी पाने उघडू देत. शुभ सकाळ! 🌸",
+"रात्र कितीही काळी असली तरी सकाळ नक्की येते, म्हणून आशा सोडू नका.",
+"शांत झोपा, उद्याची सकाळ तुमच्यासाठी सुंदर संधी घेऊन येणार आहे. शुभ रात्री! 🌙",
+"दिवसभराचा थकवा विसरा, मनातील चिंता बाजूला ठेवा आणि गोड झोपा.",
+"आज जे काही मिळालं त्यासाठी आभार माना आणि उद्यासाठी सुंदर स्वप्नं पाहा.",
+"शुभ रात्री! तुमच्या सर्व चिंता चंद्रासोबत दूर जावोत आणि स्वप्नं तारकांसारखी सुंदर असोत.",
+"रात्री मन शांत ठेवा, कारण उद्या पुन्हा नव्याने सुरुवात करायची आहे.",
+"गोड स्वप्नं पाहा, कारण सुंदर स्वप्नांमधूनच सुंदर भविष्याची सुरुवात होते.",
+"आजचा दिवस संपला, पण उद्याची संधी अजून बाकी आहे. शुभ रात्री! ❤️",
+"देव तुमच्या मनातील प्रत्येक चिंता दूर करो आणि शांत झोप देवो.",
+"शुभ सकाळ असो किंवा शुभ रात्री, तुमच्या चेहऱ्यावरचं हसू कायम असू दे."
+]
+}
+
+};
+
+
+/* =====================================================
+   CREATE ALL SHAYARI
+===================================================== */
+
+let allShayari = [];
+
+let id = 1;
+
+for(const key in categories){
+
+    const category = categories[key];
+
+    category.texts.forEach((text,index)=>{
+
+        allShayari.push({
+
+            id:id++,
+
+            category:key,
+
+            label:category.label,
+
+            text:text,});
+
+    });
+
+}
+
+
+/* =====================================================
+   VARIABLES
+===================================================== */
+
+let currentCategory = "all";
+
+let currentSearch = "";
+
+
+/* =====================================================
+   RENDER
+===================================================== */
+
+function renderShayari(){
+
+    const grid =
+    document.getElementById("shayariGrid");
+
+    let data = allShayari;
+
+
+    if(currentCategory !== "all"){
+
+        data = data.filter(
+            item => item.category === currentCategory
+        );
+
+    }
+
+
+    if(currentSearch.trim() !== ""){
+
+        const search =
+        currentSearch.toLowerCase();
+
+        data = data.filter(item =>
+
+            item.text
+            .toLowerCase()
+            .includes(search)
+
+            ||
+
+            item.label
+            .toLowerCase()
+            .includes(search)
+
+        );
+
+    }
+
+
+    if(currentCategory === "all"){
+
+        document.getElementById("categoryTitle")
+        .innerText =
+        "✨ सर्व शायरी";
+
+    }else{
+
+        document.getElementById("categoryTitle")
+        .innerText =
+        categories[currentCategory].label
+        + " — 20 शायरी";
+
+    }
+
+
+    if(data.length === 0){
+
+        grid.innerHTML = `
+
+        <div style="
+        grid-column:1/-1;
+        text-align:center;
+        padding:60px 20px;
+        font-size:20px;
+        color:#777;">
+
+        😔 शायरी सापडली नाही.
+
+        </div>
+
+        `;
+
+        return;
+    }
+
+
+    grid.innerHTML = data.map(item => {
+
+        const liked =
+        localStorage.getItem(
+            "liked_"+item.id
+        ) === "true";
+
+
+        return `
+
+        <article class="shayari-card">
+
+            <div class="photo cat-${item.category}">
+
+                <div class="photo-overlay"></div>
+
+
+                <div class="shayari-content">
+
+                    <span class="category-label">
+                        ${item.label}
+                    </span>
+
+                    <div class="shayari-text">
+                        ${item.text}
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="card-actions">
+
+                <button
+                class="action-btn like-btn"
+                onclick="likeShayari(${item.id},this)">
+
+                ${liked ? "❤️ Liked" : "🤍 Like"}
+
+                </button>
+
+
+                <button
+                class="action-btn copy-btn"
+                onclick="copyShayari(${item.id})">
+
+                📋 Copy
+
+                </button>
+
+
+                <button
+                class="action-btn share-btn"
+                onclick="shareWhatsApp(${item.id})">
+
+                💬 Share
+
+                </button>
+
+            </div>
+
+        </article>
+
+        `;
+
+    }).join("");
+
+}
+
+
+/* =====================================================
+   CATEGORY
+===================================================== */
+
+function showCategory(category,button){
+
+    currentCategory = category;
+
+    currentSearch = "";
+
+    document.getElementById("searchInput").value = "";
+
+
+    document
+    .querySelectorAll(".category-btn")
+    .forEach(btn =>
+        btn.classList.remove("active")
+    );
+
+
+    if(button){
+
+        button.classList.add("active");
+
+    }else{
+
+        document
+        .querySelector(".category-btn")
+        .classList.add("active");
+
+    }
+
+
+    renderShayari();
+
+
+    document
+    .getElementById("shayari")
+    .scrollIntoView({
+        behavior:"smooth",
+        block:"start"
+    });
+
+}
+
+
+/* =====================================================
+   SHOW ALL
+===================================================== */
+
+function showAll(){
+
+    currentCategory = "all";
+
+    currentSearch = "";
+
+    document.getElementById("searchInput").value = "";
+
+
+    document
+    .querySelectorAll(".category-btn")
+    .forEach(btn =>
+        btn.classList.remove("active")
+    );
+
+
+    document
+    .querySelector(".category-btn")
+    .classList.add("active");
+
+
+    renderShayari();
+
+}
+
+
+/* =====================================================
+   SEARCH
+===================================================== */
+
+function searchShayari(){
+
+    currentSearch =
+    document.getElementById("searchInput").value;
+
+    renderShayari();
+
+}
+
+
+/* =====================================================
+   LIKE
+===================================================== */
+
+function likeShayari(id,button){
+
+    const key = "liked_"+id;
+
+    const isLiked =
+    localStorage.getItem(key) === "true";
+
+
+    if(isLiked){
+
+        localStorage.removeItem(key);
+
+        button.innerText =
+        "🤍 Like";
+
+    }else{
+
+        localStorage.setItem(key,"true");
+
+        button.innerText =
+        "❤️ Liked";
+
+    }
+
+}
+
+
+/* =====================================================
+   COPY
+===================================================== */
+
+function copyShayari(id){
+
+    const item =
+    allShayari.find(
+        x => x.id === id
+    );
+
+
+    const text =
+    item.text +
+    "\n\n❤️ Marathi Love Status";
+
+
+    navigator.clipboard
+    .writeText(text)
+    .then(()=>{
+
+        alert("✅ शायरी Copy झाली!");
+
+    })
+    .catch(()=>{
+
+        alert("Copy करता आले नाही.");
+
+    });
+
+}
+
+
+/* =====================================================
+   WHATSAPP SHARE
+===================================================== */
+
+function shareWhatsApp(id){
+
+    const item =
+    allShayari.find(
+        x => x.id === id
+    );
+
+
+    const text =
+    item.text +
+    "\n\n❤️ Marathi Love Status";
+
+
+    const url =
+    "https://wa.me/?text="
+    + encodeURIComponent(text);
+
+
+    window.open(
+        url,
+        "_blank"
+    );
+
+}
+
+
+/* =====================================================
+   DARK MODE
+===================================================== */
+
+function toggleDark(){
+
+    document.body
+    .classList.toggle("dark");
+
+
+    const dark =
+    document.body
+    .classList
+    .contains("dark");
+
+
+    localStorage.setItem(
+        "darkMode",
+        dark
+    );
+
+
+    document
+    .querySelector(".dark-btn")
+    .innerText =
+    dark ? "☀️" : "🌙";
+
+}
+
+
+if(
+    localStorage.getItem("darkMode")
+    === "true"
+){
+
+    document.body
+    .classList
+    .add("dark");
+
+
+    document
+    .querySelector(".dark-btn")
+    .innerText = "☀️";
+
+}
+
+
+/* =====================================================
+   SCROLL TOP
+===================================================== */
+
+window.addEventListener(
+    "scroll",
+    ()=>{
+
+        const btn =
+        document.getElementById("topBtn");
+
+
+        btn.style.display =
+        window.scrollY > 500
+        ? "block"
+        : "none";
+
+    }
+);
+
+
+/* =====================================================
+   START WEBSITE
+===================================================== */
+
+renderShayari();
+
+
+/* =====================================================
+   CATEGORY URL SUPPORT
+===================================================== */
+
+window.addEventListener(
+    "load",
+    ()=>{
+
+        const hash =
+        location.hash.replace("#","");
+
+
+        if(categories[hash]){
+
+            const buttons =
+            document.querySelectorAll(
+                ".category-btn"
+            );
+
+
+            const categoryKeys = [
+
+                "all",
+                "prem",
+                "romantic",
+                "sad",
+                "breakup",
+                "memory",
+                "friendship",
+                "attitude",
+                "motivation",
+                "parents",
+                "morning"
+
+            ];
+
+
+            const index =
+            categoryKeys.indexOf(hash);
+
+
+            if(index >= 0){
+
+                showCategory(
+                    hash,
+                    buttons[index]
+                );
+
+            }
+
+        }
+
+    }
+);
+
+</script>
+
+</body>
+</html>
+
+```
